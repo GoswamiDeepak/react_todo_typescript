@@ -1,4 +1,3 @@
-import React from "react";
 import { useTodos } from "../store/store";
 import { useSearchParams } from "react-router-dom";
 
@@ -8,14 +7,13 @@ const Todos = () => {
   const todoData = searchParms.get("todos");
   let filterData = todos;
 
-  if(todoData === 'active') {
-    filterData = filterData.filter((task)=>!task.completed)
+  if (todoData === "active") {
+    filterData = filterData.filter((task) => !task.completed);
   }
 
-  if(todoData === 'completed') {
-    filterData = filterData.filter((task)=>task.completed)
+  if (todoData === "completed") {
+    filterData = filterData.filter((task) => task.completed);
   }
-
 
   return (
     <ul className="main-task">

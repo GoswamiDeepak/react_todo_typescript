@@ -1,4 +1,4 @@
-import React from 'react'
+
 import Addtodo from './component/Addtodo'
 import Todos from './component/Todos'
 import Navbar from './component/Navbar'
