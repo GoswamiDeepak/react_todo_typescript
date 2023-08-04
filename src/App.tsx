@@ -2,7 +2,7 @@
 import Addtodo from './component/Addtodo'
 import Todos from './component/Todos'
 import Navbar from './component/Navbar'
-import "./app.css";
+// import "./app.css";
 const App = () => {
   return (
     <main>
